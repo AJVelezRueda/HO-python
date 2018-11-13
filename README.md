@@ -39,45 +39,4 @@ Graficar el siguiente polinomio, su derivada y puntos extremos:  f(x)=x³+x²-4x
   8. Colocar titulo y colores distintos para la función y la derivada.
   9. Guardar los resultados de evaluar la función en el rango del punto a cada 0.1 unidades en un archivo de texto.
 
-
-
-#Ejercicio I
-multiplos = []
-for i in range(0,1000):
-    if (i%3)==0:
-        multiplos.append(i)
-    elif (i%5) ==0:
-        multiplos.append(i)
-multiplos = set(multiplos)
-suma = 0
-for i in multiplos:
-    suma = suma + i
-print(suma)
-
-#Ejercico 2 
-a = 0
-b = 1
-fibronacci = []
-while b<1000000:
-    a,b = b , b+a
-    fibronacci.append(b)
-suma = 0
-for i in fibronacci:
-    if (i%2) != 0:
-        suma = suma + i
-print(suma)
-
-#Ejercicio III
-num = 600851475143
-denom = 2
-
-facprimos = []
-while num > 1:
-    while (num%denom) == 0:
-        num = num/denom
-        facprimos.append(denom)
-    denom += 1
-facprimos = list(set(facprimos))
-max(facprimos)
-
-
+#se adjuntan los ejercicios como ejecutables separados
